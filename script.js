@@ -5,7 +5,7 @@ const getNewMeme = () => {
   fetch("https://meme-api.com/gimme")
     .then((response) => response.json())
     .then((json) => {
-      dogImageDiv.innerHTML = `<img src="${json.url}" height="500" width="500">`;
+      dogImageDiv.innerHTML = `<img src="${json.url}" height="450" width="450">`;
     });
 };
 
